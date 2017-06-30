@@ -4,7 +4,7 @@
 During my testing process at work, I often have many test running simultaneously and business partners who want regular performance reports.  To improve efficiency and provide my business partners with autonomy I created an interactive excel sheet wherein a macro is connected to a python script using the python package `xlwings`.  To use the sheet, I first insert the relevant testing dates and test groups into the excel sheet as shown here:
 
 ![](pics/data_entry.png =20x)
-<img src="pics/data_entry.png " width="200" height="400" />
+<img src="pics/data_entry.png " width="200" />
 
 After the cells outlined in the red box are updated, I just have to press the macro button `get incrementality!` to run the python script and produce the report.  The macro connects to a VBA module called `RunPython()` which allows me to connect to python.  Within python, the cells' values are then read using:
 
