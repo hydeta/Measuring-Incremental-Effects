@@ -144,6 +144,6 @@ Finally, the values that are reinserted into the excel sheet are used to evaluat
 
 Because there is a control group that is without treatment, we can test each KPI to determine whether or not it's significantly different from the control group.  For both repeat visit rate and conversion rate I use a chi-squared test, and for average order value I use a t-test.  The `adjusted` column of the sheet is then set to evaluate whether the p-value from each of those tests is lower than the alpha value we set. Only when the difference is statistically significant do I replace the control value with the test group values.  In the example below, the `test` column has an AOV that is different from control at a statistically significant level so the `test`AOV value is carried over to `adjusted` column.  Conversely the `BAU` AOV is not significant so the control value is used in the `adjusted` column. 
 
-<img src="pics/incremental.png) " width="600" />
+<img src="pics/incremental.png " width="600" />
 
 Finally, I am left with the Cost / Incremental Revenue, which is representative of return on investment.  This sheet empowers non-technical business analysts to monitor modeling performance without having to query the database and calculate the KPIs themselves, saving roughly half an hour of effort each time a report is requested.
